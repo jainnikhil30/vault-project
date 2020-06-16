@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: print the vault variable
+      debug:
+        msg: "Here is the vault variable: {{ password }}"
